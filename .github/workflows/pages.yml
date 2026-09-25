@@ -1,0 +1,43 @@
+name: pages
+
+# Publishes the site at https://jumasheff.github.io/ascii-digits/ when a
+# release tag (asciidigits-v<version>) is pushed, or when run by hand.
+# Once, in the repository's Settings > Pages, set Source to "GitHub Actions".
+on:
+  push:
+    tags: ["asciidigits-v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0              # build_site.py republishes every earlier release tag
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.14"
+      - run: python -m pip install -r requirements.txt
+      - run: python tools/build_site.py
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
