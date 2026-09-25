@@ -1,0 +1,26 @@
+{
+  "note": "Initial candidates. Task 12 (style curation) sets TTF presets from the readability check and replaces the FIGlet list.",
+  "styles": [
+    {"id": "ttf:dancing-script", "name": "Dancing Script", "family": "cursive", "source": "ttf", "font_file": "DancingScript.ttf", "presets": ["16x10", "24x14"]},
+    {"id": "ttf:great-vibes", "name": "Great Vibes", "family": "cursive", "source": "ttf", "font_file": "GreatVibes-Regular.ttf", "thicken": 0.35, "presets": ["16x10", "24x14"]},
+    {"id": "ttf:caveat", "name": "Caveat", "family": "cursive", "source": "ttf", "font_file": "Caveat.ttf", "presets": ["16x10", "24x14"]},
+    {"id": "ttf:pacifico", "name": "Pacifico", "family": "cursive", "source": "ttf", "font_file": "Pacifico-Regular.ttf", "presets": ["16x10", "24x14"]},
+    {"id": "ttf:sacramento", "name": "Sacramento", "family": "cursive", "source": "ttf", "font_file": "Sacramento-Regular.ttf", "thicken": 0.35, "presets": ["16x10", "24x14"]},
+    {"id": "ttf:comic-neue", "name": "Comic Neue", "family": "comic", "source": "ttf", "font_file": "ComicNeue-Regular.ttf", "presets": ["16x10", "24x14"]},
+    {"id": "ttf:patrick-hand", "name": "Patrick Hand", "family": "comic", "source": "ttf", "font_file": "PatrickHand-Regular.ttf", "presets": ["16x10", "24x14"]},
+    {"id": "ttf:indie-flower", "name": "Indie Flower", "family": "comic", "source": "ttf", "font_file": "IndieFlower-Regular.ttf", "presets": ["16x10", "24x14"]},
+    {"id": "ttf:gochi-hand", "name": "Gochi Hand", "family": "comic", "source": "ttf", "font_file": "GochiHand-Regular.ttf", "presets": ["16x10", "24x14"]},
+    {"id": "ttf:shadows-into-light", "name": "Shadows Into Light", "family": "comic", "source": "ttf", "font_file": "ShadowsIntoLight.ttf", "presets": ["16x10", "24x14"]},
+    {"id": "ttf:permanent-marker", "name": "Permanent Marker", "family": "display", "source": "ttf", "font_file": "PermanentMarker-Regular.ttf", "presets": ["16x10", "24x14"]},
+    {"id": "ttf:rock-salt", "name": "Rock Salt", "family": "display", "source": "ttf", "font_file": "RockSalt-Regular.ttf", "presets": ["16x10", "24x14"]},
+    {"id": "ttf:bangers", "name": "Bangers", "family": "display", "source": "ttf", "font_file": "Bangers-Regular.ttf", "presets": ["16x10", "24x14"]},
+    {"id": "ttf:creepster", "name": "Creepster", "family": "display", "source": "ttf", "font_file": "Creepster-Regular.ttf", "presets": ["16x10", "24x14"]},
+    {"id": "ttf:press-start-2p", "name": "Press Start 2P", "family": "display", "source": "ttf", "font_file": "PressStart2P-Regular.ttf", "presets": ["16x10", "24x14"]},
+    {"id": "ttf:special-elite", "name": "Special Elite", "family": "display", "source": "ttf", "font_file": "SpecialElite-Regular.ttf", "presets": ["16x10", "24x14"]},
+    {"id": "figlet:starwars", "name": "FIGlet starwars", "family": "figlet", "source": "figlet", "figlet_font": "starwars", "digit_size": [8, 6]},
+    {"id": "figlet:big", "name": "FIGlet big", "family": "figlet", "source": "figlet", "figlet_font": "big", "digit_size": [8, 6]},
+    {"id": "figlet:doom", "name": "FIGlet doom", "family": "figlet", "source": "figlet", "figlet_font": "doom", "digit_size": [7, 6]},
+    {"id": "figlet:banner3", "name": "FIGlet banner3", "family": "figlet", "source": "figlet", "figlet_font": "banner3", "digit_size": [9, 7]},
+    {"id": "figlet:larry3d", "name": "FIGlet larry3d", "family": "figlet", "source": "figlet", "figlet_font": "larry3d", "digit_size": [12, 7]}
+  ]
+}

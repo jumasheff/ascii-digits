@@ -1,0 +1,2470 @@
+{
+ "pyfiglet": "1.0.4",
+ "fonts": [
+  {
+   "font": "1943____",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "1row",
+   "width": 3,
+   "height": 1
+  },
+  {
+   "font": "3-d",
+   "width": 7,
+   "height": 8
+  },
+  {
+   "font": "3d-ascii",
+   "width": 15,
+   "height": 8
+  },
+  {
+   "font": "3d_diagonal",
+   "width": 15,
+   "height": 16
+  },
+  {
+   "font": "3x5",
+   "width": 3,
+   "height": 5
+  },
+  {
+   "font": "4max",
+   "width": 7,
+   "height": 4
+  },
+  {
+   "font": "4x4_offr",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "5lineoblique",
+   "width": 11,
+   "height": 5
+  },
+  {
+   "font": "5x7",
+   "width": 4,
+   "height": 6
+  },
+  {
+   "font": "5x8",
+   "width": 4,
+   "height": 6
+  },
+  {
+   "font": "64f1____",
+   "width": 7,
+   "height": 8
+  },
+  {
+   "font": "6x10",
+   "width": 5,
+   "height": 7
+  },
+  {
+   "font": "6x9",
+   "width": 5,
+   "height": 6
+  },
+  {
+   "font": "a_zooloo",
+   "width": 8,
+   "height": 8
+  },
+  {
+   "font": "acrobatic",
+   "width": 17,
+   "height": 9
+  },
+  {
+   "font": "advenger",
+   "width": 8,
+   "height": 8
+  },
+  {
+   "font": "alligator",
+   "width": 15,
+   "height": 7
+  },
+  {
+   "font": "alligator2",
+   "width": 11,
+   "height": 7
+  },
+  {
+   "font": "alphabet",
+   "width": 5,
+   "height": 5
+  },
+  {
+   "font": "amc_3_line",
+   "width": 3,
+   "height": 3
+  },
+  {
+   "font": "amc_3_liv1",
+   "width": 7,
+   "height": 3
+  },
+  {
+   "font": "amc_neko",
+   "width": 11,
+   "height": 9
+  },
+  {
+   "font": "amc_razor",
+   "width": 11,
+   "height": 6
+  },
+  {
+   "font": "amc_razor2",
+   "width": 9,
+   "height": 8
+  },
+  {
+   "font": "amc_thin",
+   "width": 9,
+   "height": 6
+  },
+  {
+   "font": "amc_untitled",
+   "width": 10,
+   "height": 7
+  },
+  {
+   "font": "aquaplan",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "arrows",
+   "width": 12,
+   "height": 6
+  },
+  {
+   "font": "asc_____",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "ascii12",
+   "width": 8,
+   "height": 7
+  },
+  {
+   "font": "ascii9",
+   "width": 6,
+   "height": 5
+  },
+  {
+   "font": "ascii___",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "ascii_new_roman",
+   "width": 7,
+   "height": 4
+  },
+  {
+   "font": "assalt_m",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "asslt__m",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "atc_____",
+   "width": 8,
+   "height": 8
+  },
+  {
+   "font": "atc_gran",
+   "width": 8,
+   "height": 8
+  },
+  {
+   "font": "avatar",
+   "width": 6,
+   "height": 5
+  },
+  {
+   "font": "b1ff",
+   "width": 1,
+   "height": 1
+  },
+  {
+   "font": "b_m__200",
+   "width": 7,
+   "height": 8
+  },
+  {
+   "font": "banner",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "banner3",
+   "width": 9,
+   "height": 7
+  },
+  {
+   "font": "banner3-D",
+   "width": 11,
+   "height": 8
+  },
+  {
+   "font": "banner4",
+   "width": 10,
+   "height": 7
+  },
+  {
+   "font": "barbwire",
+   "width": 12,
+   "height": 6
+  },
+  {
+   "font": "basic",
+   "width": 8,
+   "height": 6
+  },
+  {
+   "font": "battle_s",
+   "width": 8,
+   "height": 8
+  },
+  {
+   "font": "battlesh",
+   "width": 8,
+   "height": 8
+  },
+  {
+   "font": "bear",
+   "width": 1,
+   "height": 1
+  },
+  {
+   "font": "beer_pub",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "bell",
+   "width": 6,
+   "height": 5
+  },
+  {
+   "font": "benjamin",
+   "width": 3,
+   "height": 1
+  },
+  {
+   "font": "big",
+   "width": 8,
+   "height": 6
+  },
+  {
+   "font": "big_money-ne",
+   "width": 10,
+   "height": 8
+  },
+  {
+   "font": "big_money-nw",
+   "width": 10,
+   "height": 8
+  },
+  {
+   "font": "big_money-se",
+   "width": 10,
+   "height": 9
+  },
+  {
+   "font": "big_money-sw",
+   "width": 10,
+   "height": 9
+  },
+  {
+   "font": "bigascii12",
+   "width": 8,
+   "height": 12
+  },
+  {
+   "font": "bigascii9",
+   "width": 6,
+   "height": 9
+  },
+  {
+   "font": "bigchief",
+   "width": 10,
+   "height": 6
+  },
+  {
+   "font": "bigfig",
+   "width": 3,
+   "height": 3
+  },
+  {
+   "font": "binary",
+   "width": 8,
+   "height": 1
+  },
+  {
+   "font": "block",
+   "width": 10,
+   "height": 5
+  },
+  {
+   "font": "blocks",
+   "width": 20,
+   "height": 11
+  },
+  {
+   "font": "bolger",
+   "width": 10,
+   "height": 6
+  },
+  {
+   "font": "braced",
+   "width": 7,
+   "height": 4
+  },
+  {
+   "font": "bright",
+   "width": 8,
+   "height": 6
+  },
+  {
+   "font": "brite",
+   "width": 5,
+   "height": 6
+  },
+  {
+   "font": "briteb",
+   "width": 5,
+   "height": 6
+  },
+  {
+   "font": "britebi",
+   "width": 5,
+   "height": 6
+  },
+  {
+   "font": "britei",
+   "width": 4,
+   "height": 6
+  },
+  {
+   "font": "broadway_kb",
+   "width": 5,
+   "height": 3
+  },
+  {
+   "font": "bubble",
+   "width": 5,
+   "height": 4
+  },
+  {
+   "font": "bubble__",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "bulbhead",
+   "width": 7,
+   "height": 4
+  },
+  {
+   "font": "c1______",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "c2______",
+   "width": 7,
+   "height": 8
+  },
+  {
+   "font": "c_ascii_",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "c_consen",
+   "width": 6,
+   "height": 8
+  },
+  {
+   "font": "calgphy2",
+   "width": 1,
+   "height": 7
+  },
+  {
+   "font": "caligraphy",
+   "width": 1,
+   "height": 7
+  },
+  {
+   "font": "cards",
+   "width": 8,
+   "height": 6
+  },
+  {
+   "font": "catwalk",
+   "width": 12,
+   "height": 6
+  },
+  {
+   "font": "caus_in_",
+   "width": 7,
+   "height": 8
+  },
+  {
+   "font": "char1___",
+   "width": 6,
+   "height": 6
+  },
+  {
+   "font": "char2___",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "char3___",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "char4___",
+   "width": 8,
+   "height": 7
+  },
+  {
+   "font": "charact1",
+   "width": 7,
+   "height": 6
+  },
+  {
+   "font": "charact2",
+   "width": 7,
+   "height": 6
+  },
+  {
+   "font": "charact3",
+   "width": 8,
+   "height": 6
+  },
+  {
+   "font": "charact4",
+   "width": 6,
+   "height": 6
+  },
+  {
+   "font": "charact5",
+   "width": 6,
+   "height": 6
+  },
+  {
+   "font": "charact6",
+   "width": 7,
+   "height": 6
+  },
+  {
+   "font": "characte",
+   "width": 7,
+   "height": 6
+  },
+  {
+   "font": "charset_",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "chartr",
+   "width": 5,
+   "height": 6
+  },
+  {
+   "font": "chartri",
+   "width": 5,
+   "height": 6
+  },
+  {
+   "font": "chiseled",
+   "width": 16,
+   "height": 9
+  },
+  {
+   "font": "chunky",
+   "width": 8,
+   "height": 4
+  },
+  {
+   "font": "clb6x10",
+   "width": 5,
+   "height": 8
+  },
+  {
+   "font": "clb8x10",
+   "width": 6,
+   "height": 8
+  },
+  {
+   "font": "clb8x8",
+   "width": 6,
+   "height": 7
+  },
+  {
+   "font": "cli8x8",
+   "width": 8,
+   "height": 7
+  },
+  {
+   "font": "clr4x6",
+   "width": 3,
+   "height": 5
+  },
+  {
+   "font": "clr5x10",
+   "width": 4,
+   "height": 7
+  },
+  {
+   "font": "clr5x6",
+   "width": 4,
+   "height": 5
+  },
+  {
+   "font": "clr5x8",
+   "width": 4,
+   "height": 7
+  },
+  {
+   "font": "clr6x10",
+   "width": 5,
+   "height": 8
+  },
+  {
+   "font": "clr6x6",
+   "width": 5,
+   "height": 5
+  },
+  {
+   "font": "clr6x8",
+   "width": 5,
+   "height": 7
+  },
+  {
+   "font": "clr7x10",
+   "width": 5,
+   "height": 8
+  },
+  {
+   "font": "clr7x8",
+   "width": 5,
+   "height": 7
+  },
+  {
+   "font": "clr8x10",
+   "width": 6,
+   "height": 8
+  },
+  {
+   "font": "clr8x8",
+   "width": 6,
+   "height": 7
+  },
+  {
+   "font": "coinstak",
+   "width": 12,
+   "height": 6
+  },
+  {
+   "font": "cola",
+   "width": 7,
+   "height": 4
+  },
+  {
+   "font": "colossal",
+   "width": 10,
+   "height": 8
+  },
+  {
+   "font": "com_sen_",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "computer",
+   "width": 7,
+   "height": 6
+  },
+  {
+   "font": "contessa",
+   "width": 3,
+   "height": 3
+  },
+  {
+   "font": "contrast",
+   "width": 8,
+   "height": 6
+  },
+  {
+   "font": "convoy__",
+   "width": 7,
+   "height": 8
+  },
+  {
+   "font": "cosmic",
+   "width": 9,
+   "height": 6
+  },
+  {
+   "font": "cosmike",
+   "width": 9,
+   "height": 6
+  },
+  {
+   "font": "cour",
+   "width": 4,
+   "height": 6
+  },
+  {
+   "font": "courb",
+   "width": 5,
+   "height": 6
+  },
+  {
+   "font": "courbi",
+   "width": 5,
+   "height": 6
+  },
+  {
+   "font": "couri",
+   "width": 5,
+   "height": 6
+  },
+  {
+   "font": "crazy",
+   "width": 19,
+   "height": 13
+  },
+  {
+   "font": "cricket",
+   "width": 9,
+   "height": 7
+  },
+  {
+   "font": "cursive",
+   "width": 6,
+   "height": 4
+  },
+  {
+   "font": "cygnet",
+   "width": 3,
+   "height": 3
+  },
+  {
+   "font": "d_dragon",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "danc4",
+   "width": 7,
+   "height": 4
+  },
+  {
+   "font": "dancing_font",
+   "width": 10,
+   "height": 7
+  },
+  {
+   "font": "dcs_bfmo",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "decimal",
+   "width": 2,
+   "height": 1
+  },
+  {
+   "font": "def_leppard",
+   "width": 15,
+   "height": 13
+  },
+  {
+   "font": "defleppard",
+   "width": 15,
+   "height": 13
+  },
+  {
+   "font": "demo_1__",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "demo_2__",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "demo_m__",
+   "width": 8,
+   "height": 7
+  },
+  {
+   "font": "devilish",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "diamond",
+   "width": 12,
+   "height": 6
+  },
+  {
+   "font": "diet_cola",
+   "width": 8,
+   "height": 4
+  },
+  {
+   "font": "digital",
+   "width": 3,
+   "height": 3
+  },
+  {
+   "font": "doh",
+   "width": 20,
+   "height": 16
+  },
+  {
+   "font": "doom",
+   "width": 7,
+   "height": 6
+  },
+  {
+   "font": "dotmatrix",
+   "width": 16,
+   "height": 8
+  },
+  {
+   "font": "double_shorts",
+   "width": 1,
+   "height": 1
+  },
+  {
+   "font": "drpepper",
+   "width": 6,
+   "height": 4
+  },
+  {
+   "font": "druid___",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "dwhistled",
+   "width": 1,
+   "height": 9
+  },
+  {
+   "font": "e__fist_",
+   "width": 6,
+   "height": 7
+  },
+  {
+   "font": "ebbs_1__",
+   "width": 7,
+   "height": 6
+  },
+  {
+   "font": "ebbs_2__",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "eca_____",
+   "width": 7,
+   "height": 6
+  },
+  {
+   "font": "efti_robot",
+   "width": 5,
+   "height": 4
+  },
+  {
+   "font": "eftifont",
+   "width": 5,
+   "height": 4
+  },
+  {
+   "font": "eftipiti",
+   "width": 1,
+   "height": 1
+  },
+  {
+   "font": "eftirobot",
+   "width": 5,
+   "height": 4
+  },
+  {
+   "font": "eftitalic",
+   "width": 7,
+   "height": 4
+  },
+  {
+   "font": "eftiwall",
+   "width": 14,
+   "height": 3
+  },
+  {
+   "font": "eftiwater",
+   "width": 5,
+   "height": 3
+  },
+  {
+   "font": "epic",
+   "width": 10,
+   "height": 8
+  },
+  {
+   "font": "etcrvs__",
+   "width": 6,
+   "height": 6
+  },
+  {
+   "font": "f15_____",
+   "width": 8,
+   "height": 8
+  },
+  {
+   "font": "faces_of",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "fair_mea",
+   "width": 6,
+   "height": 7
+  },
+  {
+   "font": "fairligh",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "fantasy_",
+   "width": 6,
+   "height": 8
+  },
+  {
+   "font": "fbr12___",
+   "width": 7,
+   "height": 8
+  },
+  {
+   "font": "fbr1____",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "fbr2____",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "fbr_stri",
+   "width": 6,
+   "height": 7
+  },
+  {
+   "font": "fbr_tilt",
+   "width": 7,
+   "height": 8
+  },
+  {
+   "font": "fender",
+   "width": 8,
+   "height": 6
+  },
+  {
+   "font": "filter",
+   "width": 1,
+   "height": 1
+  },
+  {
+   "font": "finalass",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "fire_font-k",
+   "width": 8,
+   "height": 7
+  },
+  {
+   "font": "fire_font-s",
+   "width": 8,
+   "height": 7
+  },
+  {
+   "font": "fireing_",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "flipped",
+   "width": 6,
+   "height": 4
+  },
+  {
+   "font": "flower_power",
+   "width": 14,
+   "height": 9
+  },
+  {
+   "font": "flyn_sh",
+   "width": 8,
+   "height": 7
+  },
+  {
+   "font": "fourtops",
+   "width": 6,
+   "height": 3
+  },
+  {
+   "font": "fp1_____",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "fp2_____",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "fraktur",
+   "width": 15,
+   "height": 11
+  },
+  {
+   "font": "fun_face",
+   "width": 1,
+   "height": 1
+  },
+  {
+   "font": "fun_faces",
+   "width": 10,
+   "height": 7
+  },
+  {
+   "font": "funky_dr",
+   "width": 7,
+   "height": 5
+  },
+  {
+   "font": "future_1",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "future_2",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "future_3",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "future_4",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "future_5",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "future_6",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "future_7",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "future_8",
+   "width": 7,
+   "height": 5
+  },
+  {
+   "font": "fuzzy",
+   "width": 6,
+   "height": 5
+  },
+  {
+   "font": "gauntlet",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "georgi16",
+   "width": 9,
+   "height": 11
+  },
+  {
+   "font": "georgia11",
+   "width": 10,
+   "height": 7
+  },
+  {
+   "font": "ghost",
+   "width": 11,
+   "height": 7
+  },
+  {
+   "font": "ghost_bo",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "ghoulish",
+   "width": 9,
+   "height": 6
+  },
+  {
+   "font": "glenyn",
+   "width": 5,
+   "height": 4
+  },
+  {
+   "font": "goofy",
+   "width": 10,
+   "height": 6
+  },
+  {
+   "font": "gothic",
+   "width": 5,
+   "height": 7
+  },
+  {
+   "font": "gothic__",
+   "width": 8,
+   "height": 7
+  },
+  {
+   "font": "graceful",
+   "width": 6,
+   "height": 4
+  },
+  {
+   "font": "gradient",
+   "width": 13,
+   "height": 8
+  },
+  {
+   "font": "graffiti",
+   "width": 10,
+   "height": 6
+  },
+  {
+   "font": "greek",
+   "width": 8,
+   "height": 6
+  },
+  {
+   "font": "green_be",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "heart_left",
+   "width": 6,
+   "height": 3
+  },
+  {
+   "font": "heart_right",
+   "width": 6,
+   "height": 3
+  },
+  {
+   "font": "heavy_me",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "helv",
+   "width": 4,
+   "height": 6
+  },
+  {
+   "font": "helvb",
+   "width": 5,
+   "height": 6
+  },
+  {
+   "font": "helvbi",
+   "width": 5,
+   "height": 6
+  },
+  {
+   "font": "helvi",
+   "width": 5,
+   "height": 6
+  },
+  {
+   "font": "henry_3d",
+   "width": 10,
+   "height": 7
+  },
+  {
+   "font": "heroboti",
+   "width": 8,
+   "height": 8
+  },
+  {
+   "font": "hex",
+   "width": 2,
+   "height": 1
+  },
+  {
+   "font": "hieroglyphs",
+   "width": 1,
+   "height": 1
+  },
+  {
+   "font": "high_noo",
+   "width": 8,
+   "height": 8
+  },
+  {
+   "font": "hollywood",
+   "width": 16,
+   "height": 7
+  },
+  {
+   "font": "home_pak",
+   "width": 7,
+   "height": 6
+  },
+  {
+   "font": "horizontal_left",
+   "width": 10,
+   "height": 5
+  },
+  {
+   "font": "horizontal_right",
+   "width": 10,
+   "height": 5
+  },
+  {
+   "font": "house_of",
+   "width": 7,
+   "height": 8
+  },
+  {
+   "font": "hypa_bal",
+   "width": 8,
+   "height": 8
+  },
+  {
+   "font": "hyper___",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "icl-1900",
+   "width": 1,
+   "height": 13
+  },
+  {
+   "font": "impossible",
+   "width": 18,
+   "height": 11
+  },
+  {
+   "font": "inc_raw_",
+   "width": 7,
+   "height": 8
+  },
+  {
+   "font": "invita",
+   "width": 7,
+   "height": 5
+  },
+  {
+   "font": "italic",
+   "width": 5,
+   "height": 3
+  },
+  {
+   "font": "italics_",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "ivrit",
+   "width": 8,
+   "height": 5
+  },
+  {
+   "font": "jacky",
+   "width": 11,
+   "height": 7
+  },
+  {
+   "font": "jazmine",
+   "width": 7,
+   "height": 9
+  },
+  {
+   "font": "jerusalem",
+   "width": 8,
+   "height": 5
+  },
+  {
+   "font": "joust___",
+   "width": 8,
+   "height": 8
+  },
+  {
+   "font": "js_capital_curves",
+   "width": 1,
+   "height": 1
+  },
+  {
+   "font": "katakana",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "kban",
+   "width": 5,
+   "height": 7
+  },
+  {
+   "font": "keyboard",
+   "width": 9,
+   "height": 7
+  },
+  {
+   "font": "kik_star",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "knob",
+   "width": 11,
+   "height": 4
+  },
+  {
+   "font": "konto",
+   "width": 1,
+   "height": 1
+  },
+  {
+   "font": "konto_slant",
+   "width": 1,
+   "height": 1
+  },
+  {
+   "font": "larry3d",
+   "width": 12,
+   "height": 7
+  },
+  {
+   "font": "lazy_jon",
+   "width": 7,
+   "height": 8
+  },
+  {
+   "font": "lcd",
+   "width": 5,
+   "height": 5
+  },
+  {
+   "font": "lean",
+   "width": 12,
+   "height": 5
+  },
+  {
+   "font": "letter",
+   "width": 5,
+   "height": 5
+  },
+  {
+   "font": "letter_w",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "letters",
+   "width": 8,
+   "height": 5
+  },
+  {
+   "font": "letterw3",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "lexible_",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "lil_devil",
+   "width": 10,
+   "height": 6
+  },
+  {
+   "font": "line_blocks",
+   "width": 1,
+   "height": 1
+  },
+  {
+   "font": "linux",
+   "width": 6,
+   "height": 3
+  },
+  {
+   "font": "lockergnome",
+   "width": 6,
+   "height": 3
+  },
+  {
+   "font": "mad_nurs",
+   "width": 7,
+   "height": 8
+  },
+  {
+   "font": "madrid",
+   "width": 3,
+   "height": 3
+  },
+  {
+   "font": "magic_ma",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "marquee",
+   "width": 12,
+   "height": 6
+  },
+  {
+   "font": "master_o",
+   "width": 8,
+   "height": 8
+  },
+  {
+   "font": "maxfour",
+   "width": 6,
+   "height": 3
+  },
+  {
+   "font": "mayhem_d",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "mcg_____",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "merlin1",
+   "width": 13,
+   "height": 7
+  },
+  {
+   "font": "merlin2",
+   "width": 10,
+   "height": 7
+  },
+  {
+   "font": "mig_ally",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "mike",
+   "width": 1,
+   "height": 1
+  },
+  {
+   "font": "mini",
+   "width": 4,
+   "height": 3
+  },
+  {
+   "font": "mirror",
+   "width": 8,
+   "height": 5
+  },
+  {
+   "font": "mnemonic",
+   "width": 1,
+   "height": 1
+  },
+  {
+   "font": "modern__",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "modular",
+   "width": 9,
+   "height": 7
+  },
+  {
+   "font": "morse",
+   "width": 5,
+   "height": 1
+  },
+  {
+   "font": "morse2",
+   "width": 5,
+   "height": 1
+  },
+  {
+   "font": "moscow",
+   "width": 3,
+   "height": 5
+  },
+  {
+   "font": "muzzle",
+   "width": 1,
+   "height": 1
+  },
+  {
+   "font": "nancyj",
+   "width": 8,
+   "height": 6
+  },
+  {
+   "font": "nancyj-fancy",
+   "width": 8,
+   "height": 6
+  },
+  {
+   "font": "nancyj-improved",
+   "width": 8,
+   "height": 6
+  },
+  {
+   "font": "nancyj-underlined",
+   "width": 9,
+   "height": 7
+  },
+  {
+   "font": "new_asci",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "nipples",
+   "width": 12,
+   "height": 6
+  },
+  {
+   "font": "notie_ca",
+   "width": 8,
+   "height": 8
+  },
+  {
+   "font": "npn_____",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "nscript",
+   "width": 13,
+   "height": 10
+  },
+  {
+   "font": "ntgreek",
+   "width": 8,
+   "height": 6
+  },
+  {
+   "font": "o8",
+   "width": 11,
+   "height": 5
+  },
+  {
+   "font": "octal",
+   "width": 3,
+   "height": 1
+  },
+  {
+   "font": "odel_lak",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "ogre",
+   "width": 8,
+   "height": 5
+  },
+  {
+   "font": "ok_beer_",
+   "width": 7,
+   "height": 6
+  },
+  {
+   "font": "old_banner",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "os2",
+   "width": 10,
+   "height": 7
+  },
+  {
+   "font": "outrun__",
+   "width": 7,
+   "height": 8
+  },
+  {
+   "font": "p_s_h_m_",
+   "width": 8,
+   "height": 8
+  },
+  {
+   "font": "pacos_pe",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "panther_",
+   "width": 8,
+   "height": 8
+  },
+  {
+   "font": "pawn_ins",
+   "width": 6,
+   "height": 8
+  },
+  {
+   "font": "pawp",
+   "width": 10,
+   "height": 6
+  },
+  {
+   "font": "peaks",
+   "width": 12,
+   "height": 6
+  },
+  {
+   "font": "pebbles",
+   "width": 6,
+   "height": 7
+  },
+  {
+   "font": "pepper",
+   "width": 4,
+   "height": 3
+  },
+  {
+   "font": "phonix__",
+   "width": 7,
+   "height": 8
+  },
+  {
+   "font": "platoon2",
+   "width": 8,
+   "height": 8
+  },
+  {
+   "font": "platoon_",
+   "width": 8,
+   "height": 7
+  },
+  {
+   "font": "poison",
+   "width": 10,
+   "height": 10
+  },
+  {
+   "font": "puffy",
+   "width": 9,
+   "height": 6
+  },
+  {
+   "font": "puzzle",
+   "width": 10,
+   "height": 5
+  },
+  {
+   "font": "pyramid",
+   "width": 5,
+   "height": 3
+  },
+  {
+   "font": "r2-d2___",
+   "width": 8,
+   "height": 8
+  },
+  {
+   "font": "rad_____",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "rad_phan",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "radical_",
+   "width": 8,
+   "height": 7
+  },
+  {
+   "font": "rammstein",
+   "width": 8,
+   "height": 4
+  },
+  {
+   "font": "rampage_",
+   "width": 8,
+   "height": 7
+  },
+  {
+   "font": "rastan__",
+   "width": 6,
+   "height": 7
+  },
+  {
+   "font": "rci_____",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "rectangles",
+   "width": 7,
+   "height": 4
+  },
+  {
+   "font": "red_phoenix",
+   "width": 10,
+   "height": 6
+  },
+  {
+   "font": "relief",
+   "width": 12,
+   "height": 7
+  },
+  {
+   "font": "relief2",
+   "width": 12,
+   "height": 7
+  },
+  {
+   "font": "rev",
+   "width": 11,
+   "height": 11
+  },
+  {
+   "font": "ripper!_",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "road_rai",
+   "width": 6,
+   "height": 6
+  },
+  {
+   "font": "rockbox_",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "rok_____",
+   "width": 7,
+   "height": 5
+  },
+  {
+   "font": "roman",
+   "width": 10,
+   "height": 7
+  },
+  {
+   "font": "roman___",
+   "width": 8,
+   "height": 8
+  },
+  {
+   "font": "rot13",
+   "width": 1,
+   "height": 1
+  },
+  {
+   "font": "rotated",
+   "width": 5,
+   "height": 2
+  },
+  {
+   "font": "rounded",
+   "width": 9,
+   "height": 6
+  },
+  {
+   "font": "rozzo",
+   "width": 11,
+   "height": 5
+  },
+  {
+   "font": "sans",
+   "width": 5,
+   "height": 6
+  },
+  {
+   "font": "sansb",
+   "width": 5,
+   "height": 6
+  },
+  {
+   "font": "sansbi",
+   "width": 5,
+   "height": 6
+  },
+  {
+   "font": "sansi",
+   "width": 4,
+   "height": 6
+  },
+  {
+   "font": "santa_clara",
+   "width": 6,
+   "height": 4
+  },
+  {
+   "font": "sblood",
+   "width": 8,
+   "height": 5
+  },
+  {
+   "font": "sbook",
+   "width": 3,
+   "height": 6
+  },
+  {
+   "font": "sbookb",
+   "width": 5,
+   "height": 6
+  },
+  {
+   "font": "sbookbi",
+   "width": 5,
+   "height": 6
+  },
+  {
+   "font": "sbooki",
+   "width": 4,
+   "height": 6
+  },
+  {
+   "font": "script",
+   "width": 6,
+   "height": 5
+  },
+  {
+   "font": "script__",
+   "width": 8,
+   "height": 8
+  },
+  {
+   "font": "serifcap",
+   "width": 6,
+   "height": 4
+  },
+  {
+   "font": "shadow",
+   "width": 7,
+   "height": 4
+  },
+  {
+   "font": "shimrod",
+   "width": 5,
+   "height": 5
+  },
+  {
+   "font": "short",
+   "width": 3,
+   "height": 2
+  },
+  {
+   "font": "skate_ro",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "skateord",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "skateroc",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "sketch_s",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "sl_script",
+   "width": 6,
+   "height": 4
+  },
+  {
+   "font": "slant",
+   "width": 10,
+   "height": 5
+  },
+  {
+   "font": "slant_relief",
+   "width": 29,
+   "height": 9
+  },
+  {
+   "font": "slide",
+   "width": 6,
+   "height": 5
+  },
+  {
+   "font": "slscript",
+   "width": 6,
+   "height": 4
+  },
+  {
+   "font": "sm______",
+   "width": 8,
+   "height": 8
+  },
+  {
+   "font": "small",
+   "width": 6,
+   "height": 4
+  },
+  {
+   "font": "small_caps",
+   "width": 6,
+   "height": 4
+  },
+  {
+   "font": "small_poison",
+   "width": 8,
+   "height": 5
+  },
+  {
+   "font": "small_shadow",
+   "width": 5,
+   "height": 3
+  },
+  {
+   "font": "small_slant",
+   "width": 7,
+   "height": 4
+  },
+  {
+   "font": "smascii12",
+   "width": 5,
+   "height": 7
+  },
+  {
+   "font": "smascii9",
+   "width": 4,
+   "height": 5
+  },
+  {
+   "font": "smkeyboard",
+   "width": 6,
+   "height": 4
+  },
+  {
+   "font": "smscript",
+   "width": 5,
+   "height": 4
+  },
+  {
+   "font": "smshadow",
+   "width": 5,
+   "height": 3
+  },
+  {
+   "font": "smslant",
+   "width": 7,
+   "height": 4
+  },
+  {
+   "font": "smtengwar",
+   "width": 8,
+   "height": 3
+  },
+  {
+   "font": "soft",
+   "width": 8,
+   "height": 5
+  },
+  {
+   "font": "space_op",
+   "width": 8,
+   "height": 8
+  },
+  {
+   "font": "spc_demo",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "speed",
+   "width": 10,
+   "height": 5
+  },
+  {
+   "font": "spliff",
+   "width": 7,
+   "height": 4
+  },
+  {
+   "font": "stacey",
+   "width": 7,
+   "height": 6
+  },
+  {
+   "font": "stampate",
+   "width": 4,
+   "height": 4
+  },
+  {
+   "font": "stampatello",
+   "width": 3,
+   "height": 3
+  },
+  {
+   "font": "standard",
+   "width": 8,
+   "height": 5
+  },
+  {
+   "font": "star_strips",
+   "width": 1,
+   "height": 1
+  },
+  {
+   "font": "star_war",
+   "width": 8,
+   "height": 8
+  },
+  {
+   "font": "starwars",
+   "width": 8,
+   "height": 6
+  },
+  {
+   "font": "stealth_",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "stellar",
+   "width": 12,
+   "height": 6
+  },
+  {
+   "font": "stencil2",
+   "width": 8,
+   "height": 8
+  },
+  {
+   "font": "stforek",
+   "width": 7,
+   "height": 4
+  },
+  {
+   "font": "stop",
+   "width": 9,
+   "height": 6
+  },
+  {
+   "font": "straight",
+   "width": 4,
+   "height": 3
+  },
+  {
+   "font": "street_s",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "super_te",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "swamp_land",
+   "width": 14,
+   "height": 7
+  },
+  {
+   "font": "swan",
+   "width": 5,
+   "height": 5
+  },
+  {
+   "font": "sweet",
+   "width": 11,
+   "height": 9
+  },
+  {
+   "font": "t__of_ap",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "tanja",
+   "width": 7,
+   "height": 6
+  },
+  {
+   "font": "tav1____",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "taxi____",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "tec1____",
+   "width": 6,
+   "height": 6
+  },
+  {
+   "font": "tec_7000",
+   "width": 6,
+   "height": 6
+  },
+  {
+   "font": "tecrvs__",
+   "width": 6,
+   "height": 6
+  },
+  {
+   "font": "tengwar",
+   "width": 18,
+   "height": 9
+  },
+  {
+   "font": "term",
+   "width": 1,
+   "height": 1
+  },
+  {
+   "font": "thick",
+   "width": 6,
+   "height": 4
+  },
+  {
+   "font": "thin",
+   "width": 4,
+   "height": 4
+  },
+  {
+   "font": "thorned",
+   "width": 1,
+   "height": 1
+  },
+  {
+   "font": "threepoint",
+   "width": 3,
+   "height": 2
+  },
+  {
+   "font": "ti_pan__",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "ticks",
+   "width": 14,
+   "height": 6
+  },
+  {
+   "font": "ticksslant",
+   "width": 19,
+   "height": 6
+  },
+  {
+   "font": "tiles",
+   "width": 12,
+   "height": 6
+  },
+  {
+   "font": "times",
+   "width": 4,
+   "height": 5
+  },
+  {
+   "font": "timesofl",
+   "width": 8,
+   "height": 8
+  },
+  {
+   "font": "tinker-toy",
+   "width": 5,
+   "height": 5
+  },
+  {
+   "font": "tomahawk",
+   "width": 8,
+   "height": 8
+  },
+  {
+   "font": "tombstone",
+   "width": 3,
+   "height": 4
+  },
+  {
+   "font": "top_duck",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "train",
+   "width": 8,
+   "height": 6
+  },
+  {
+   "font": "trashman",
+   "width": 8,
+   "height": 7
+  },
+  {
+   "font": "trek",
+   "width": 11,
+   "height": 5
+  },
+  {
+   "font": "triad_st",
+   "width": 6,
+   "height": 7
+  },
+  {
+   "font": "ts1_____",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "tsalagi",
+   "width": 7,
+   "height": 5
+  },
+  {
+   "font": "tsm_____",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "tsn_base",
+   "width": 8,
+   "height": 7
+  },
+  {
+   "font": "tty",
+   "width": 5,
+   "height": 6
+  },
+  {
+   "font": "ttyb",
+   "width": 4,
+   "height": 6
+  },
+  {
+   "font": "tubular",
+   "width": 12,
+   "height": 6
+  },
+  {
+   "font": "twin_cob",
+   "width": 8,
+   "height": 8
+  },
+  {
+   "font": "twisted",
+   "width": 11,
+   "height": 7
+  },
+  {
+   "font": "twopoint",
+   "width": 3,
+   "height": 2
+  },
+  {
+   "font": "type_set",
+   "width": 6,
+   "height": 7
+  },
+  {
+   "font": "ucf_fan_",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "ugalympi",
+   "width": 8,
+   "height": 8
+  },
+  {
+   "font": "unarmed_",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "univers",
+   "width": 14,
+   "height": 8
+  },
+  {
+   "font": "usa_____",
+   "width": 7,
+   "height": 5
+  },
+  {
+   "font": "usa_pq__",
+   "width": 7,
+   "height": 5
+  },
+  {
+   "font": "usaflag",
+   "width": 8,
+   "height": 5
+  },
+  {
+   "font": "utopia",
+   "width": 4,
+   "height": 7
+  },
+  {
+   "font": "utopiab",
+   "width": 6,
+   "height": 7
+  },
+  {
+   "font": "utopiabi",
+   "width": 6,
+   "height": 7
+  },
+  {
+   "font": "utopiai",
+   "width": 5,
+   "height": 7
+  },
+  {
+   "font": "varsity",
+   "width": 10,
+   "height": 6
+  },
+  {
+   "font": "vortron_",
+   "width": 6,
+   "height": 7
+  },
+  {
+   "font": "war_of_w",
+   "width": 8,
+   "height": 6
+  },
+  {
+   "font": "wavy",
+   "width": 4,
+   "height": 3
+  },
+  {
+   "font": "weird",
+   "width": 5,
+   "height": 5
+  },
+  {
+   "font": "wet_letter",
+   "width": 1,
+   "height": 1
+  },
+  {
+   "font": "wow",
+   "width": 1,
+   "height": 1
+  },
+  {
+   "font": "xbrite",
+   "width": 5,
+   "height": 8
+  },
+  {
+   "font": "xbriteb",
+   "width": 6,
+   "height": 8
+  },
+  {
+   "font": "xbritebi",
+   "width": 6,
+   "height": 8
+  },
+  {
+   "font": "xbritei",
+   "width": 6,
+   "height": 8
+  },
+  {
+   "font": "xchartr",
+   "width": 6,
+   "height": 7
+  },
+  {
+   "font": "xchartri",
+   "width": 6,
+   "height": 8
+  },
+  {
+   "font": "xcour",
+   "width": 5,
+   "height": 7
+  },
+  {
+   "font": "xcourb",
+   "width": 6,
+   "height": 7
+  },
+  {
+   "font": "xcourbi",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "xcouri",
+   "width": 6,
+   "height": 7
+  },
+  {
+   "font": "xhelv",
+   "width": 5,
+   "height": 8
+  },
+  {
+   "font": "xhelvb",
+   "width": 6,
+   "height": 8
+  },
+  {
+   "font": "xhelvbi",
+   "width": 6,
+   "height": 8
+  },
+  {
+   "font": "xhelvi",
+   "width": 6,
+   "height": 8
+  },
+  {
+   "font": "xsans",
+   "width": 5,
+   "height": 7
+  },
+  {
+   "font": "xsansb",
+   "width": 6,
+   "height": 7
+  },
+  {
+   "font": "xsansbi",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "xsansi",
+   "width": 6,
+   "height": 7
+  },
+  {
+   "font": "xsbook",
+   "width": 4,
+   "height": 8
+  },
+  {
+   "font": "xsbookb",
+   "width": 6,
+   "height": 8
+  },
+  {
+   "font": "xsbookbi",
+   "width": 6,
+   "height": 8
+  },
+  {
+   "font": "xsbooki",
+   "width": 5,
+   "height": 8
+  },
+  {
+   "font": "xtimes",
+   "width": 5,
+   "height": 7
+  },
+  {
+   "font": "xtty",
+   "width": 5,
+   "height": 7
+  },
+  {
+   "font": "xttyb",
+   "width": 5,
+   "height": 7
+  },
+  {
+   "font": "yie-ar__",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "yie_ar_k",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "z-pilot_",
+   "width": 8,
+   "height": 8
+  },
+  {
+   "font": "zig_zag_",
+   "width": 7,
+   "height": 7
+  },
+  {
+   "font": "zone7___",
+   "width": 7,
+   "height": 8
+  }
+ ]
+}
