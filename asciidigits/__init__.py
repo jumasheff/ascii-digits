@@ -3,7 +3,7 @@
 Source: https://github.com/jumasheff/ascii-digits
 """
 
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 
 from .dataset import FontMissingError, Generator, generate_dataset, preview  # noqa: E402
 from .settings import Settings, SettingsError  # noqa: E402

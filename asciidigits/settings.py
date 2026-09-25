@@ -6,7 +6,7 @@ The same Settings object is built by the CLI (from flags) and by the web page
 
 from dataclasses import asdict, dataclass, fields
 
-PRESETS = {"8x6": (8, 6), "12x8": (12, 8), "16x10": (16, 10), "24x14": (24, 14)}
+PRESETS = {"12x8": (12, 8), "16x10": (16, 10), "24x14": (24, 14)}
 MIN_WIDTH, MIN_HEIGHT = 6, 4
 MAX_WIDTH, MAX_HEIGHT = 40, 24
 MAX_CELLS = 8_000_000          # samples x width x height in one run

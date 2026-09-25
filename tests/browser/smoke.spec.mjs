@@ -56,7 +56,7 @@ test.describe.serial("one loaded page", () => {
   test("keeps the settings in the URL", async () => {
     await page.locator("#seed").fill("77");
     await expect(page).toHaveURL(/seed=77/);
-    await expect(page).toHaveURL(/v=1\.0\.0/);
+    await expect(page).toHaveURL(/v=1\.1\.0/);
   });
 });
 

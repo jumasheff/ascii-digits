@@ -1,6 +1,6 @@
 import pytest
 
-from asciidigits.settings import MAX_CELLS, Settings, SettingsError, parse_size
+from asciidigits.settings import MAX_CELLS, PRESETS, Settings, SettingsError, parse_size
 
 
 def test_defaults_match_the_spec():
@@ -84,3 +84,9 @@ def test_ink_mode_order_does_not_change_the_data():
     # The page sends checkbox order and the CLI sends flag order; both must give the same data.
     assert Settings(ink_modes=("ramp", "symbols")) == Settings(ink_modes=("symbols", "ramp", "ramp"))
     assert Settings.from_dict({"ink_modes": "ramp,symbols"}).ink_modes == ("symbols", "ramp")
+
+
+def test_the_presets():
+    # 8x6 is not a preset: only one TTF style was readable there. It is still a valid custom size.
+    assert list(PRESETS) == ["12x8", "16x10", "24x14"]
+    assert Settings(width=8, height=6).validate()

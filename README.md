@@ -63,7 +63,7 @@ from the CLI on Linux and macOS (see "Windows").
   (runtime, time) can differ. To compare two datasets, compare
   `dataset_sha256`.
 
-Links carry the generator version (`?v=1.0.0`). Every release stays online
+Links carry the generator version (`?v=1.1.0`). Every release stays online
 under `/v<version>/`, so an old link still produces its original data.
 
 ## Windows
@@ -104,7 +104,7 @@ preset.
    ```bash
    python -m asciidigits sheet --size 16x10 --ignore-presets --figlet-candidates tools/figlet_candidates.json --out sheets/16x10.txt
    ```
-   Do the same for 8x6, 12x8 and 24x14.
+   Do the same for 12x8 and 24x14.
 3. Record the decisions in `tools/curation.json`. For each TTF style, list
    the presets where all ten digits are readable in the clean row and both
    damaged rows. List up to 40 FIGlet fonts, varied, without near-duplicates.
@@ -157,9 +157,17 @@ Pyodide checks its packages' SHA-256 itself. To remove the CDN entirely:
 2. Commit, then `git tag asciidigits-v<version>`.
 3. Push the commit and the tag. The Pages workflow builds and deploys the site.
 
+## Changes
+
+- **1.1.0:** 8x6 is no longer a preset, because only one TTF style (Comic
+  Neue) was readable there. Grids smaller than 12x8 are still allowed as
+  custom sizes, with the FIGlet fonts that fit. Data at 12x8 and larger is
+  identical to 1.0.0's. 1.0.0 stays online at `/v1.0.0/`.
+
 ## Results
 
-Measured for v1.0.0, with 51 curated styles (16 TTF, 35 FIGlet).
+Measured for v1.0.0, with 51 curated styles (16 TTF, 35 FIGlet). v1.1.0
+changes nothing at these sizes, so the numbers still hold.
 
 - **Speed (Chromium, once Python has loaded):**
   - the default dataset, 7,000 samples at 16x10: 4.3 s;
@@ -168,13 +176,11 @@ Measured for v1.0.0, with 51 curated styles (16 TTF, 35 FIGlet).
 
   | Preset | Cursive | Comic | Display | FIGlet |
   |--------|---------|-------|---------|--------|
-  | 8x6    | 0       | 1     | 0       | 5      |
   | 12x8   | 2       | 1     | 1       | 30     |
   | 16x10  | 5       | 5     | 4       | 35     |
   | 24x14  | 5       | 5     | 6       | 2      |
 
   The held-out split needs at least 3 styles in a family to put that family
   in every split. At the default 16x10, every family reaches every split. At
-  8x6 and 12x8 the TTF families are smaller than that, and at 24x14 FIGlet
-  is. The page, the CLI and `metadata.json` each note which splits such a
+  12x8 the TTF families are smaller than that, and at 24x14 FIGlet is. The page, the CLI and `metadata.json` each note which splits such a
   family reaches.

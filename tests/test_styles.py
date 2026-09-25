@@ -70,3 +70,8 @@ def test_resolve_explains_unknown_and_unavailable_styles():
 def test_available_styles_at_the_default_size_include_every_family():
     at_default = available_styles(load_styles(), 16, 10)
     assert {s.family for s in at_default} == set(FAMILIES)
+
+
+def test_below_the_smallest_preset_only_figlet_fonts_are_available():
+    small = available_styles(load_styles(), 8, 6)
+    assert small and all(style.source == "figlet" for style in small)

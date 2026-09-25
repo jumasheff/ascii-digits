@@ -67,7 +67,6 @@
    "source": "ttf",
    "font_file": "ComicNeue-Regular.ttf",
    "presets": [
-    "8x6",
     "12x8",
     "16x10",
     "24x14"
