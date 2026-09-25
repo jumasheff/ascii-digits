@@ -33,3 +33,14 @@ def test_earlier_releases_keep_their_own_folder(tmp_path):
     build(dist, "1.0.0", [("0.9.0", old)])
     assert (dist / "v0.9.0" / "index.html").read_text(encoding="utf-8") == "<p>version 0.9</p>"
     assert (dist / "index.html").read_text(encoding="utf-8") != "<p>version 0.9</p>"
+
+
+def test_a_tagged_version_is_published_from_its_tag(tmp_path):
+    # Links to /v<version>/ must keep their data even after the working tree moves on.
+    tagged = tmp_path / "tagged"
+    copy_site(GENERATOR, tagged)
+    (tagged / "index.html").write_text("<p>as tagged</p>", encoding="utf-8")
+    dist = tmp_path / "dist"
+    build(dist, "1.0.0", [("1.0.0", tagged)])
+    assert (dist / "v1.0.0" / "index.html").read_text(encoding="utf-8") == "<p>as tagged</p>"
+    assert (dist / "index.html").read_text(encoding="utf-8") != "<p>as tagged</p>"

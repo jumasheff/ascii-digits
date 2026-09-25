@@ -128,12 +128,18 @@ preset.
 
 The site is static. `python tools/build_site.py` assembles `dist/` with this
 release at the root and under `/v<version>/`, plus every earlier release. A
-release is a git tag named `asciidigits-v<version>`.
+release is a git tag named `asciidigits-v<version>`, and a tagged version is
+always published from its tag.
 
 - **GitHub Pages:** `.github/workflows/pages.yml` builds `dist/` and deploys
-  it to https://jumasheff.github.io/ascii-digits/ whenever a release tag is
-  pushed, or when it's run by hand from the Actions tab. Once, in the
-  repository's Settings > Pages, set Source to "GitHub Actions".
+  it to https://jumasheff.github.io/ascii-digits/ when a release tag is
+  pushed. It stops if the tag doesn't match `__version__`. To retry a failed
+  deploy, re-run it from the Actions tab. Set up once, in the repository's
+  settings:
+  1. Pages: set Source to "GitHub Actions".
+  2. Environments > github-pages > Deployment branches and tags: add a tag
+     rule `asciidigits-v*`. By default only the default branch may deploy,
+     so a tag push would be refused.
 - **Any other static host:** run `python tools/build_site.py` and upload
   `dist/`. The page uses relative paths only, so it works under any path
   prefix.

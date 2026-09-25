@@ -55,10 +55,10 @@ def build(dist: Path, version: str, releases: list) -> None:
     if dist.exists():
         shutil.rmtree(dist)
     copy_site(GENERATOR, dist)
-    copy_site(GENERATOR, dist / f"v{version}")
-    for old_version, folder in releases:
-        if old_version != version:
-            copy_site(folder, dist / f"v{old_version}")
+    releases = dict(releases)
+    releases.setdefault(version, GENERATOR)     # not tagged yet: this tree is the release
+    for release, folder in releases.items():    # a tagged version is always published as tagged
+        copy_site(folder, dist / f"v{release}")
 
 
 def main() -> None:
