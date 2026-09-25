@@ -10,7 +10,7 @@ from . import __version__
 from .dataset import Generator, preview
 from .settings import (FLOAT_LIMITS, INK_MODES, MAX_CELLS, MAX_HEIGHT, MAX_WIDTH, MIN_HEIGHT,
                        MIN_WIDTH, PRESETS, SPLIT_MODES, Settings, SettingsError)
-from .styles import load_styles, unavailable_reason
+from .styles import load_styles, resolve, unavailable_reason
 
 _state = {"fonts_dir": None, "generator": None}
 
@@ -40,7 +40,9 @@ def _settings(settings_json: str) -> Settings:
 
 def validate_json(settings_json: str) -> str:
     try:
-        return json.dumps({"ok": True, "settings": _settings(settings_json).to_dict()})
+        settings = _settings(settings_json)
+        resolve(settings, load_styles())    # unknown or unavailable styles are errors too
+        return json.dumps({"ok": True, "settings": settings.to_dict()})
     except SettingsError as error:
         return json.dumps({"ok": False, "error": str(error)})
 

@@ -50,6 +50,11 @@ def test_the_cell_cap():
     ({"styles": 5}, "styles must be a list"),
     ({"seed": True}, "seed must be a whole number"),
     ({"colour": "red"}, "unknown setting"),
+    ({"seed": "nan"}, "seed must be a whole number"),
+    ({"width": "inf"}, "width must be a whole number"),
+    ({"per_digit": "1e400,1,1"}, "per_digit must be a whole number"),
+    ({"seed": 10 ** 400}, "seed must be between"),
+    ({"noise": "nan"}, "noise must be"),
 ])
 def test_bad_input_types_give_settings_errors_not_crashes(data, message):
     with pytest.raises(SettingsError, match=message):
@@ -73,3 +78,9 @@ def test_parse_size():
     assert parse_size("24X14") == (24, 14)
     with pytest.raises(SettingsError, match="16x10"):
         parse_size("big")
+
+
+def test_ink_mode_order_does_not_change_the_data():
+    # The page sends checkbox order and the CLI sends flag order; both must give the same data.
+    assert Settings(ink_modes=("ramp", "symbols")) == Settings(ink_modes=("symbols", "ramp", "ramp"))
+    assert Settings.from_dict({"ink_modes": "ramp,symbols"}).ink_modes == ("symbols", "ramp")

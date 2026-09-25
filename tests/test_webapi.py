@@ -17,6 +17,13 @@ def test_validate_reports_errors_instead_of_raising():
     assert json.loads(webapi.validate_json('{"seed": "5"}'))["settings"]["seed"] == 5
 
 
+def test_validate_rejects_styles_the_page_cannot_use():
+    unknown = json.loads(webapi.validate_json('{"styles": ["nope"]}'))
+    assert unknown == {"ok": False, "error": "unknown style(s): nope"}
+    too_small = json.loads(webapi.validate_json('{"width": 8, "height": 6, "styles": ["ttf:pacifico"]}'))
+    assert not too_small["ok"] and too_small["error"].startswith("not available at 8x6")
+
+
 def test_start_step_finish():
     webapi.configure("")                    # "" -> the package's own assets/fonts
     info = json.loads(webapi.start(json.dumps({"per_digit": [2, 1, 1], "seed": 8})))

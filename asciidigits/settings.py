@@ -41,6 +41,13 @@ class Settings:
     size_jitter: float = 0.2               # TTF glyph fills between (0.95 - size_jitter) and 0.95 of the grid
     ink_swap: float = 0.0                  # FIGlet: chance that all ink becomes one random symbol
 
+    def __post_init__(self):
+        # The page sends ink modes in checkbox order and the CLI in flag order. The order
+        # picks each sample's mode, so keep one canonical order (and no duplicates).
+        rank = {mode: i for i, mode in enumerate(INK_MODES)}
+        modes = sorted(dict.fromkeys(self.ink_modes), key=lambda mode: rank.get(mode, len(rank)))
+        object.__setattr__(self, "ink_modes", tuple(modes))
+
     @property
     def total_samples(self) -> int:
         return 10 * sum(self.per_digit)
@@ -111,13 +118,16 @@ def parse_size(text: str) -> tuple:
 def _int(name, raw):
     if isinstance(raw, bool) or not isinstance(raw, (int, float, str)):
         raise SettingsError(f"{name} must be a whole number, got {raw!r}")
+    if isinstance(raw, int):
+        return raw                          # range checks happen in validate()
     try:
         value = float(raw)
-    except ValueError:
+        whole = int(value)                  # nan -> ValueError, inf and 1e400 -> OverflowError
+    except (ValueError, OverflowError):
         raise SettingsError(f"{name} must be a whole number, got {raw!r}") from None
-    if value != int(value):
+    if value != whole:
         raise SettingsError(f"{name} must be a whole number, got {raw!r}")
-    return int(value)
+    return whole
 
 
 def _float(name, raw):
