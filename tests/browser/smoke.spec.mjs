@@ -38,7 +38,7 @@ test.describe.serial("one loaded page", () => {
     expect((await download).suggestedFilename()).toBe("ascii-digits-5.zip");
   });
 
-  // Review focus: changing settings or clicking again while a run is going.
+  // Changing settings or clicking again while a run is going.
   test("locks the settings during a run, and Cancel stops it", async () => {
     await page.locator("#train").fill("500");
     await page.locator("#val").fill("100");
@@ -60,7 +60,7 @@ test.describe.serial("one loaded page", () => {
   });
 });
 
-// Review focus: old, hand-edited or broken links.
+// Old, hand-edited or broken links.
 test("a link with invalid settings falls back to the defaults and says why", async ({ page }) => {
   await page.goto("index.html?w=99&styles=nope");
   await ready(page);
@@ -139,7 +139,7 @@ test("a font that fails to load stops with a clear message", async ({ page }) =>
   await expect(page.locator("#retry")).toBeVisible();
 });
 
-// Review focus: people double-click index.html instead of starting a server.
+// People double-click index.html instead of starting a server.
 test("opening the file directly explains how to serve it", async ({ page }) => {
   await page.goto(pathToFileURL(join(process.cwd(), "..", "..", "index.html")).href);
   await expect(page.locator("#problem")).toContainText("python3 -m http.server 8000");

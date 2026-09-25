@@ -45,7 +45,7 @@ def test_unavailable_reasons(style, size, reason):
     assert unavailable_reason(style, *size) == reason
 
 
-# Review focus: custom sizes between presets.
+# Custom sizes between presets.
 def test_a_custom_size_bigger_than_a_passed_preset_is_allowed():
     assert unavailable_reason(ttf("16x10"), 20, 12) is None
     assert unavailable_reason(ttf("16x10"), 15, 10) == "not readable below 16x10"

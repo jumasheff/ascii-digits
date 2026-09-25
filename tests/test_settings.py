@@ -42,7 +42,7 @@ def test_the_cell_cap():
     assert MAX_CELLS == 8_000_000
 
 
-# Review focus: settings from an old or hand-edited URL arrive as strings, or garbage.
+# Settings from an old or hand-edited URL arrive as strings, or garbage.
 @pytest.mark.parametrize("data, message", [
     ({"width": "abc"}, "width must be a whole number"),
     ({"width": "16.5"}, "width must be a whole number"),

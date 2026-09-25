@@ -1,4 +1,4 @@
-// Not part of the smoke tests: measures generation time (criterion 3) and the cell cap.
+// Not part of the smoke tests: measures generation time and the cell cap.
 //   npx playwright test timing.spec.mjs --reporter=line
 import { expect, test } from "@playwright/test";
 

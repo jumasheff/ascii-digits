@@ -18,7 +18,7 @@ def test_page_and_package_versions_match():
     assert f'export const VERSION = "{asciidigits.__version__}";' in version_js
 
 
-# Review focus: a new module added to the package but not to the worker breaks only the web page.
+# A new module added to the package but not to the worker breaks only the web page.
 def test_the_worker_loads_every_module_the_package_has():
     listed = set(json.loads("[" + re.search(r"const PACKAGE_FILES = \[(.*?)\];", WORKER, re.S).group(1)
                             .replace("\n", "").rstrip().rstrip(",") + "]"))
