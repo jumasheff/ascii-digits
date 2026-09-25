@@ -44,3 +44,9 @@ def test_requirements_match_the_pyodide_build():
     requirements = (GENERATOR / "requirements.txt").read_text(encoding="utf-8")
     for name in ("numpy", "fonttools"):
         assert f"{name}=={lock[name]['version']}" in requirements
+
+
+def test_the_only_external_request_is_pinned_pyodide():
+    for path in [GENERATOR / "index.html", *(GENERATOR / "web").glob("*")]:
+        for url in re.findall(r"https?://[^\s\"'`)]+", path.read_text(encoding="utf-8")):
+            assert url.startswith(("https://cdn.jsdelivr.net/pyodide/v314.0.7/full/", "http://localhost")), (path.name, url)

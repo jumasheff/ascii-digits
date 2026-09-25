@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ASCII Digit Generator</title>
+  <meta name="description" content="Generate labelled train, validation and test sets of ASCII-art digits in many styles.">
+  <link rel="stylesheet" href="web/style.css">
+  <script type="module" src="web/app.js"></script>
+</head>
+<body>
+  <header>
+    <h1>ASCII Digit Generator</h1>
+    <p>Labelled train, validation and test sets of ASCII-art digits: cursive, comic, display and FIGlet styles.
+       Everything runs in your browser.</p>
+  </header>
+
+  <main>
+    <section id="loading" aria-live="polite">
+      <p id="loading-text">Loading Python (about 13 MB, cached after the first visit)…</p>
+      <progress id="loading-bar" max="5" value="0"></progress>
+    </section>
+
+    <section id="problem" class="problem" role="alert" hidden>
+      <p id="problem-text"></p>
+      <button type="button" id="retry" hidden>Retry</button>
+    </section>
+
+    <div id="notices" class="notices" aria-live="polite"></div>
+
+    <form id="form" hidden>
+      <fieldset id="settings">
+        <legend>Settings</legend>
+
+        <div class="group">
+          <label for="preset">Grid</label>
+          <select id="preset"></select>
+          <label for="width">Width</label>
+          <input id="width" type="number" required>
+          <label for="height">Height</label>
+          <input id="height" type="number" required>
+        </div>
+
+        <div class="group">
+          <span class="group-label">Samples per digit</span>
+          <label for="train">Train</label><input id="train" type="number" min="1" required>
+          <label for="val">Val</label><input id="val" type="number" min="0" required>
+          <label for="test">Test</label><input id="test" type="number" min="0" required>
+          <span id="total" class="hint"></span>
+        </div>
+
+        <fieldset class="group">
+          <legend>Split</legend>
+          <label><input type="radio" name="split" value="heldout"> Held-out styles
+            <span class="hint">val and test use fonts never seen in training</span></label>
+          <label><input type="radio" name="split" value="random"> Random
+            <span class="hint">every split mixes all styles</span></label>
+        </fieldset>
+
+        <fieldset class="group">
+          <legend>Styles</legend>
+          <button type="button" id="all-styles">All</button>
+          <button type="button" id="no-styles">None</button>
+          <div id="styles"></div>
+        </fieldset>
+
+        <fieldset class="group">
+          <legend>Ink for rendered fonts</legend>
+          <label><input type="checkbox" name="ink" value="symbols"> Shape-matched symbols</label>
+          <label><input type="checkbox" name="ink" value="single"> One random symbol</label>
+          <label><input type="checkbox" name="ink" value="ramp"> Density ramp</label>
+        </fieldset>
+
+        <fieldset class="group sliders">
+          <legend>Damage</legend>
+          <label for="noise">Cell noise</label>
+          <input id="noise" type="range" step="0.01"><output for="noise"></output>
+          <label for="rotation">Rotation (°)</label>
+          <input id="rotation" type="range" step="0.5"><output for="rotation"></output>
+          <label for="shift">Shift</label>
+          <input id="shift" type="range" step="0.01"><output for="shift"></output>
+          <label for="size_jitter">Size jitter</label>
+          <input id="size_jitter" type="range" step="0.01"><output for="size_jitter"></output>
+          <label for="ink_swap">FIGlet ink swap</label>
+          <input id="ink_swap" type="range" step="0.05"><output for="ink_swap"></output>
+        </fieldset>
+
+        <div class="group">
+          <label for="seed">Seed</label>
+          <input id="seed" type="number" min="0" required>
+          <button type="button" id="new-seed">New seed</button>
+        </div>
+      </fieldset>
+
+      <div class="actions">
+        <button type="submit" id="generate">Generate</button>
+        <button type="button" id="cancel" hidden>Cancel</button>
+        <progress id="progress" hidden></progress>
+        <span id="status" aria-live="polite"></span>
+        <a id="download" hidden>Download</a>
+      </div>
+    </form>
+
+    <section aria-labelledby="preview-heading">
+      <h2 id="preview-heading">Preview</h2>
+      <p id="preview-message" class="hint"></p>
+      <div id="preview" class="preview"></div>
+    </section>
+  </main>
+
+  <script>
+    // Browsers won't load the page's module scripts from file://, so this check can't live in app.js.
+    if (location.protocol === "file:") {
+      document.getElementById("loading").hidden = true;
+      document.getElementById("problem").hidden = false;
+      document.getElementById("problem-text").textContent =
+        "This page must be opened through a web server, not as a file. In the generator folder run " +
+        "`python3 -m http.server 8000`, then open http://localhost:8000/";
+    }
+  </script>
+
+  <footer>
+    <p>asciidigits <span id="version"></span> · Fonts: OFL / Apache 2.0, from Google Fonts · FIGlet fonts via pyfiglet</p>
+  </footer>
+</body>
+</html>
