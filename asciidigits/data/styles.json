@@ -1,26 +1,571 @@
 {
-  "note": "Initial candidates. Task 12 (style curation) sets TTF presets from the readability check and replaces the FIGlet list.",
-  "styles": [
-    {"id": "ttf:dancing-script", "name": "Dancing Script", "family": "cursive", "source": "ttf", "font_file": "DancingScript.ttf", "presets": ["16x10", "24x14"]},
-    {"id": "ttf:great-vibes", "name": "Great Vibes", "family": "cursive", "source": "ttf", "font_file": "GreatVibes-Regular.ttf", "thicken": 0.35, "presets": ["16x10", "24x14"]},
-    {"id": "ttf:caveat", "name": "Caveat", "family": "cursive", "source": "ttf", "font_file": "Caveat.ttf", "presets": ["16x10", "24x14"]},
-    {"id": "ttf:pacifico", "name": "Pacifico", "family": "cursive", "source": "ttf", "font_file": "Pacifico-Regular.ttf", "presets": ["16x10", "24x14"]},
-    {"id": "ttf:sacramento", "name": "Sacramento", "family": "cursive", "source": "ttf", "font_file": "Sacramento-Regular.ttf", "thicken": 0.35, "presets": ["16x10", "24x14"]},
-    {"id": "ttf:comic-neue", "name": "Comic Neue", "family": "comic", "source": "ttf", "font_file": "ComicNeue-Regular.ttf", "presets": ["16x10", "24x14"]},
-    {"id": "ttf:patrick-hand", "name": "Patrick Hand", "family": "comic", "source": "ttf", "font_file": "PatrickHand-Regular.ttf", "presets": ["16x10", "24x14"]},
-    {"id": "ttf:indie-flower", "name": "Indie Flower", "family": "comic", "source": "ttf", "font_file": "IndieFlower-Regular.ttf", "presets": ["16x10", "24x14"]},
-    {"id": "ttf:gochi-hand", "name": "Gochi Hand", "family": "comic", "source": "ttf", "font_file": "GochiHand-Regular.ttf", "presets": ["16x10", "24x14"]},
-    {"id": "ttf:shadows-into-light", "name": "Shadows Into Light", "family": "comic", "source": "ttf", "font_file": "ShadowsIntoLight.ttf", "presets": ["16x10", "24x14"]},
-    {"id": "ttf:permanent-marker", "name": "Permanent Marker", "family": "display", "source": "ttf", "font_file": "PermanentMarker-Regular.ttf", "presets": ["16x10", "24x14"]},
-    {"id": "ttf:rock-salt", "name": "Rock Salt", "family": "display", "source": "ttf", "font_file": "RockSalt-Regular.ttf", "presets": ["16x10", "24x14"]},
-    {"id": "ttf:bangers", "name": "Bangers", "family": "display", "source": "ttf", "font_file": "Bangers-Regular.ttf", "presets": ["16x10", "24x14"]},
-    {"id": "ttf:creepster", "name": "Creepster", "family": "display", "source": "ttf", "font_file": "Creepster-Regular.ttf", "presets": ["16x10", "24x14"]},
-    {"id": "ttf:press-start-2p", "name": "Press Start 2P", "family": "display", "source": "ttf", "font_file": "PressStart2P-Regular.ttf", "presets": ["16x10", "24x14"]},
-    {"id": "ttf:special-elite", "name": "Special Elite", "family": "display", "source": "ttf", "font_file": "SpecialElite-Regular.ttf", "presets": ["16x10", "24x14"]},
-    {"id": "figlet:starwars", "name": "FIGlet starwars", "family": "figlet", "source": "figlet", "figlet_font": "starwars", "digit_size": [8, 6]},
-    {"id": "figlet:big", "name": "FIGlet big", "family": "figlet", "source": "figlet", "figlet_font": "big", "digit_size": [8, 6]},
-    {"id": "figlet:doom", "name": "FIGlet doom", "family": "figlet", "source": "figlet", "figlet_font": "doom", "digit_size": [7, 6]},
-    {"id": "figlet:banner3", "name": "FIGlet banner3", "family": "figlet", "source": "figlet", "figlet_font": "banner3", "digit_size": [9, 7]},
-    {"id": "figlet:larry3d", "name": "FIGlet larry3d", "family": "figlet", "source": "figlet", "figlet_font": "larry3d", "digit_size": [12, 7]}
-  ]
+ "note": "Curated 2026-09-25 by the readability check (tools/curation.json).",
+ "styles": [
+  {
+   "id": "ttf:dancing-script",
+   "name": "Dancing Script",
+   "family": "cursive",
+   "source": "ttf",
+   "font_file": "DancingScript.ttf",
+   "presets": [
+    "16x10",
+    "24x14"
+   ]
+  },
+  {
+   "id": "ttf:great-vibes",
+   "name": "Great Vibes",
+   "family": "cursive",
+   "source": "ttf",
+   "font_file": "GreatVibes-Regular.ttf",
+   "presets": [
+    "16x10",
+    "24x14"
+   ],
+   "thicken": 0.35
+  },
+  {
+   "id": "ttf:caveat",
+   "name": "Caveat",
+   "family": "cursive",
+   "source": "ttf",
+   "font_file": "Caveat.ttf",
+   "presets": [
+    "12x8",
+    "16x10",
+    "24x14"
+   ]
+  },
+  {
+   "id": "ttf:pacifico",
+   "name": "Pacifico",
+   "family": "cursive",
+   "source": "ttf",
+   "font_file": "Pacifico-Regular.ttf",
+   "presets": [
+    "12x8",
+    "16x10",
+    "24x14"
+   ]
+  },
+  {
+   "id": "ttf:sacramento",
+   "name": "Sacramento",
+   "family": "cursive",
+   "source": "ttf",
+   "font_file": "Sacramento-Regular.ttf",
+   "presets": [
+    "16x10",
+    "24x14"
+   ],
+   "thicken": 0.35
+  },
+  {
+   "id": "ttf:comic-neue",
+   "name": "Comic Neue",
+   "family": "comic",
+   "source": "ttf",
+   "font_file": "ComicNeue-Regular.ttf",
+   "presets": [
+    "8x6",
+    "12x8",
+    "16x10",
+    "24x14"
+   ]
+  },
+  {
+   "id": "ttf:patrick-hand",
+   "name": "Patrick Hand",
+   "family": "comic",
+   "source": "ttf",
+   "font_file": "PatrickHand-Regular.ttf",
+   "presets": [
+    "16x10",
+    "24x14"
+   ]
+  },
+  {
+   "id": "ttf:indie-flower",
+   "name": "Indie Flower",
+   "family": "comic",
+   "source": "ttf",
+   "font_file": "IndieFlower-Regular.ttf",
+   "presets": [
+    "16x10",
+    "24x14"
+   ]
+  },
+  {
+   "id": "ttf:gochi-hand",
+   "name": "Gochi Hand",
+   "family": "comic",
+   "source": "ttf",
+   "font_file": "GochiHand-Regular.ttf",
+   "presets": [
+    "16x10",
+    "24x14"
+   ]
+  },
+  {
+   "id": "ttf:shadows-into-light",
+   "name": "Shadows Into Light",
+   "family": "comic",
+   "source": "ttf",
+   "font_file": "ShadowsIntoLight.ttf",
+   "presets": [
+    "16x10",
+    "24x14"
+   ]
+  },
+  {
+   "id": "ttf:permanent-marker",
+   "name": "Permanent Marker",
+   "family": "display",
+   "source": "ttf",
+   "font_file": "PermanentMarker-Regular.ttf",
+   "presets": [
+    "24x14"
+   ]
+  },
+  {
+   "id": "ttf:rock-salt",
+   "name": "Rock Salt",
+   "family": "display",
+   "source": "ttf",
+   "font_file": "RockSalt-Regular.ttf",
+   "presets": [
+    "16x10",
+    "24x14"
+   ]
+  },
+  {
+   "id": "ttf:bangers",
+   "name": "Bangers",
+   "family": "display",
+   "source": "ttf",
+   "font_file": "Bangers-Regular.ttf",
+   "presets": [
+    "16x10",
+    "24x14"
+   ]
+  },
+  {
+   "id": "ttf:creepster",
+   "name": "Creepster",
+   "family": "display",
+   "source": "ttf",
+   "font_file": "Creepster-Regular.ttf",
+   "presets": [
+    "24x14"
+   ]
+  },
+  {
+   "id": "ttf:press-start-2p",
+   "name": "Press Start 2P",
+   "family": "display",
+   "source": "ttf",
+   "font_file": "PressStart2P-Regular.ttf",
+   "presets": [
+    "16x10",
+    "24x14"
+   ]
+  },
+  {
+   "id": "ttf:special-elite",
+   "name": "Special Elite",
+   "family": "display",
+   "source": "ttf",
+   "font_file": "SpecialElite-Regular.ttf",
+   "presets": [
+    "12x8",
+    "16x10",
+    "24x14"
+   ]
+  },
+  {
+   "id": "figlet:3-d",
+   "name": "FIGlet 3-d",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "3-d",
+   "digit_size": [
+    7,
+    8
+   ]
+  },
+  {
+   "id": "figlet:a_zooloo",
+   "name": "FIGlet a_zooloo",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "a_zooloo",
+   "digit_size": [
+    8,
+    8
+   ]
+  },
+  {
+   "id": "figlet:alligator",
+   "name": "FIGlet alligator",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "alligator",
+   "digit_size": [
+    15,
+    7
+   ]
+  },
+  {
+   "id": "figlet:banner",
+   "name": "FIGlet banner",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "banner",
+   "digit_size": [
+    7,
+    7
+   ]
+  },
+  {
+   "id": "figlet:banner3",
+   "name": "FIGlet banner3",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "banner3",
+   "digit_size": [
+    9,
+    7
+   ]
+  },
+  {
+   "id": "figlet:big",
+   "name": "FIGlet big",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "big",
+   "digit_size": [
+    8,
+    6
+   ]
+  },
+  {
+   "id": "figlet:big_money-ne",
+   "name": "FIGlet big_money-ne",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "big_money-ne",
+   "digit_size": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "figlet:bigascii9",
+   "name": "FIGlet bigascii9",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "bigascii9",
+   "digit_size": [
+    6,
+    9
+   ]
+  },
+  {
+   "id": "figlet:catwalk",
+   "name": "FIGlet catwalk",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "catwalk",
+   "digit_size": [
+    12,
+    6
+   ]
+  },
+  {
+   "id": "figlet:charact3",
+   "name": "FIGlet charact3",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "charact3",
+   "digit_size": [
+    8,
+    6
+   ]
+  },
+  {
+   "id": "figlet:clr6x8",
+   "name": "FIGlet clr6x8",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "clr6x8",
+   "digit_size": [
+    5,
+    7
+   ]
+  },
+  {
+   "id": "figlet:colossal",
+   "name": "FIGlet colossal",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "colossal",
+   "digit_size": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "figlet:computer",
+   "name": "FIGlet computer",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "computer",
+   "digit_size": [
+    7,
+    6
+   ]
+  },
+  {
+   "id": "figlet:cosmic",
+   "name": "FIGlet cosmic",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "cosmic",
+   "digit_size": [
+    9,
+    6
+   ]
+  },
+  {
+   "id": "figlet:doom",
+   "name": "FIGlet doom",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "doom",
+   "digit_size": [
+    7,
+    6
+   ]
+  },
+  {
+   "id": "figlet:dotmatrix",
+   "name": "FIGlet dotmatrix",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "dotmatrix",
+   "digit_size": [
+    16,
+    8
+   ]
+  },
+  {
+   "id": "figlet:epic",
+   "name": "FIGlet epic",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "epic",
+   "digit_size": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "figlet:fantasy_",
+   "name": "FIGlet fantasy_",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "fantasy_",
+   "digit_size": [
+    6,
+    8
+   ]
+  },
+  {
+   "id": "figlet:georgia11",
+   "name": "FIGlet georgia11",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "georgia11",
+   "digit_size": [
+    10,
+    7
+   ]
+  },
+  {
+   "id": "figlet:ghost",
+   "name": "FIGlet ghost",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "ghost",
+   "digit_size": [
+    11,
+    7
+   ]
+  },
+  {
+   "id": "figlet:gothic",
+   "name": "FIGlet gothic",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "gothic",
+   "digit_size": [
+    5,
+    7
+   ]
+  },
+  {
+   "id": "figlet:graffiti",
+   "name": "FIGlet graffiti",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "graffiti",
+   "digit_size": [
+    10,
+    6
+   ]
+  },
+  {
+   "id": "figlet:jacky",
+   "name": "FIGlet jacky",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "jacky",
+   "digit_size": [
+    11,
+    7
+   ]
+  },
+  {
+   "id": "figlet:merlin1",
+   "name": "FIGlet merlin1",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "merlin1",
+   "digit_size": [
+    13,
+    7
+   ]
+  },
+  {
+   "id": "figlet:modern__",
+   "name": "FIGlet modern__",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "modern__",
+   "digit_size": [
+    7,
+    7
+   ]
+  },
+  {
+   "id": "figlet:nancyj",
+   "name": "FIGlet nancyj",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "nancyj",
+   "digit_size": [
+    8,
+    6
+   ]
+  },
+  {
+   "id": "figlet:pebbles",
+   "name": "FIGlet pebbles",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "pebbles",
+   "digit_size": [
+    6,
+    7
+   ]
+  },
+  {
+   "id": "figlet:phonix__",
+   "name": "FIGlet phonix__",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "phonix__",
+   "digit_size": [
+    7,
+    8
+   ]
+  },
+  {
+   "id": "figlet:poison",
+   "name": "FIGlet poison",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "poison",
+   "digit_size": [
+    10,
+    10
+   ]
+  },
+  {
+   "id": "figlet:ripper!_",
+   "name": "FIGlet ripper!_",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "ripper!_",
+   "digit_size": [
+    7,
+    7
+   ]
+  },
+  {
+   "id": "figlet:roman___",
+   "name": "FIGlet roman___",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "roman___",
+   "digit_size": [
+    8,
+    8
+   ]
+  },
+  {
+   "id": "figlet:utopia",
+   "name": "FIGlet utopia",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "utopia",
+   "digit_size": [
+    4,
+    7
+   ]
+  },
+  {
+   "id": "figlet:xbriteb",
+   "name": "FIGlet xbriteb",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "xbriteb",
+   "digit_size": [
+    6,
+    8
+   ]
+  },
+  {
+   "id": "figlet:xchartri",
+   "name": "FIGlet xchartri",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "xchartri",
+   "digit_size": [
+    6,
+    8
+   ]
+  },
+  {
+   "id": "figlet:xhelvi",
+   "name": "FIGlet xhelvi",
+   "family": "figlet",
+   "source": "figlet",
+   "figlet_font": "xhelvi",
+   "digit_size": [
+    6,
+    8
+   ]
+  }
+ ]
 }
