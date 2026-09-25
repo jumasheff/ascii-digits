@@ -1,0 +1,5 @@
+# Pinned to the versions inside Pyodide 314.0.7, so the CLI and the web page
+# produce identical datasets. Python 3.11 or newer.
+numpy==2.4.6
+fonttools==4.62.1
+pyfiglet==1.0.4

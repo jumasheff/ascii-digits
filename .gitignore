@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+dist/
+sheets/
+node_modules/
+tests/browser/test-results/
+tests/browser/playwright-report/
