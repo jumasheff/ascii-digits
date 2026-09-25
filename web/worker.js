@@ -4,7 +4,8 @@
 //      {type: "styles" | "validate" | "preview", id, ...}   -> {type: "reply", id, result}
 //      {type: "generate", settings}  -> "started", "progress"..., then "done" or "cancelled"
 //      {type: "cancel"}              (checked between chunks)
-// Out: {type: "loading", step, part, parts}, {type: "ready", defaults}, {type: "error", id, where, message}
+// Out: {type: "loading", step, part, parts}, {type: "ready", defaults}, {type: "error", id, where, message},
+//      {type: "busy"} (a "generate" while one runs: ignored, the running one carries on)
 import { loadPyodide } from "https://cdn.jsdelivr.net/pyodide/v314.0.7/full/pyodide.mjs";
 import { VERSION } from "./version.js";
 
@@ -86,7 +87,7 @@ async function init() {
 }
 
 async function generate(settings) {
-  if (generating) throw new Error("a dataset is already being generated");
+  if (generating) return self.postMessage({ type: "busy" });
   generating = true;
   cancelRequested = false;
   try {

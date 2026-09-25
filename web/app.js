@@ -91,7 +91,12 @@ async function onReady(defaults) {
   let settings = defaults.settings;
   const fromUrl = settingsFromUrl(params);
   if (Object.keys(fromUrl).length) {
-    const check = await request("validate", { settings: fromUrl });
+    let check;
+    try {
+      check = await request("validate", { settings: fromUrl });
+    } catch (error) {
+      check = { ok: false, error: error.message };
+    }
     if (check.ok) settings = check.settings;
     else notice(`This link's settings aren't valid (${escapeHtml(check.error)}), so the defaults are shown instead.`);
   }
@@ -150,16 +155,25 @@ function syncPreset() {
   $("#preset").value = size in state.defaults.presets ? size : "custom";
 }
 
+// The styles a run uses. [] means "every available style", which only "All" (selected === null) sends:
+// an explicit choice stays explicit, so a shared link keeps meaning the same styles at any size.
+function chosenStyles() {
+  if (state.selected === null) return [];
+  return state.styles.filter((s) => !s.reason && state.selected.has(s.id)).map((s) => s.id);
+}
+
+function noStyleChosen() {
+  return state.selected !== null && chosenStyles().length === 0;
+}
+
 function readForm() {
-  const available = state.styles.filter((s) => !s.reason).map((s) => s.id);
-  const styles = state.selected === null ? [] : available.filter((id) => state.selected.has(id));
   return {
     seed: Number($("#seed").value),
     width: Number($("#width").value),
     height: Number($("#height").value),
     per_digit: ["#train", "#val", "#test"].map((id) => Number($(id).value)),
     split_mode: document.querySelector('input[name="split"]:checked').value,
-    styles: state.selected !== null && styles.length === available.length ? [] : styles,
+    styles: chosenStyles(),
     ink_modes: [...document.querySelectorAll('input[name="ink"]:checked')].map((box) => box.value),
     ...Object.fromEntries(RANGES.map((name) => [name, Number($(`#${name}`).value)])),
   };
@@ -187,12 +201,21 @@ function updateOutputs() {
 function onChange(sizeChanged = false) {
   if (!state.defaults) return;
   updateOutputs();
-  history.replaceState(null, "", `?${settingsToUrl(readForm())}`);
+  writeUrl();
   clearTimeout(state.previewTimer);
   state.previewTimer = setTimeout(async () => {
-    if (sizeChanged) await refreshStyles();
+    if (sizeChanged) {
+      await refreshStyles();
+      writeUrl();                                         // the styles in use depend on the size
+    }
     preview();
   }, 300);
+}
+
+function writeUrl() {
+  $("#generate").disabled = state.generating || noStyleChosen();
+  if (noStyleChosen()) return;                            // a link can't say "no styles"
+  history.replaceState(null, "", `?${settingsToUrl(readForm())}`);
 }
 
 // ---- URL -------------------------------------------------------------------
@@ -275,6 +298,11 @@ function renderStyles() {
 async function preview() {
   if (state.generating) return;
   const id = ++state.previewId;
+  if (noStyleChosen()) {
+    $("#preview-message").textContent = "Select at least one style.";
+    $("#preview").replaceChildren();
+    return;
+  }
   const settings = readForm();
   try {
     const samples = await request("preview", { settings });
@@ -302,21 +330,22 @@ function tile(sample) {
 // ---- generate --------------------------------------------------------------
 
 async function generate() {
-  if (state.generating) return;
-  const settings = readForm();
-  const check = await request("validate", { settings });
-  if (!check.ok) {
-    $("#status").textContent = `Can't generate: ${check.error}`;
-    return;
-  }
-  state.generating = true;
+  if (state.generating || noStyleChosen()) return;
+  state.generating = true;                    // before the first await: a second click must do nothing
   $("#settings").disabled = true;
   $("#generate").disabled = true;
+  $("#status").textContent = "Starting…";
+  let check;
+  try {
+    check = await request("validate", { settings: readForm() });
+  } catch (error) {
+    check = { ok: false, error: error.message };
+  }
+  if (!check.ok) return endGeneration(`Can't generate: ${check.error}`);
   $("#cancel").hidden = false;
   Object.assign($("#progress"), { hidden: false, value: 0 });
   $("#download").hidden = true;
   $("#notices").replaceChildren();
-  $("#status").textContent = "Starting…";
   state.worker.postMessage({ type: "generate", settings: check.settings });
 }
 
@@ -333,7 +362,7 @@ function finishGeneration(zip, filename) {
 function endGeneration(message) {
   state.generating = false;
   $("#settings").disabled = false;
-  $("#generate").disabled = false;
+  $("#generate").disabled = noStyleChosen();
   $("#cancel").hidden = true;
   $("#progress").hidden = true;
   $("#status").textContent = message;
