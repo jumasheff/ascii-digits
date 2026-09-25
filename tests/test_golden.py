@@ -1,7 +1,7 @@
 """Every runtime must reproduce the recorded hashes in tests/golden/expected.json.
 
 The hashes come from Pyodide (the web page's runtime), which is the reference.
-CI runs the CPython test on Linux, macOS and Windows. The Pyodide test needs
+CI runs the CPython test on Linux and macOS. The Pyodide test needs
 Node.js: once, `cd tests/golden && npm ci`.
 
 When an intentional change alters the output (new styles, a rendering change),
